@@ -1,0 +1,68 @@
+unit uPH_WAPP_RDW;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  System.IOUtils,
+  System.StrUtils,
+  System.JSON,
+  System.NetEncoding,
+  System.DateUtils,
+
+  UDWDatamodule,
+  uRESTDWPoolerDB,
+  uRestDWDriverFD,
+  uDWAbout,
+  uSystemEvents,
+  uRESTDWBase,
+  uRESTDWServerEvents,
+  uDWJSONObject,
+  uDWDataset,
+  uDWJSONTools,
+  uDWConsts,
+  uRESTDWServerContext,
+  ServerUtils;
+
+type
+  TRDW = class(TServerMethodDataModule)
+    whatsapp: TDWServerEvents;
+    procedure whatsappEventsenviarMensagemTextoReplyEvent(var Params: TDWParams;
+      var Result: string);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  RDW: TRDW;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+uses uPH_WAPP_Principal;
+
+{$R *.dfm}
+
+procedure TRDW.whatsappEventsenviarMensagemTextoReplyEvent(
+  var Params: TDWParams; var Result: string);
+begin
+  try
+    if not frmPrincipal.FWhatsApp.Auth then
+       Exit;
+
+    frmPrincipal.FWhatsApp.send('554797473192@c.us', 'Mensagem Enviada');
+  except
+    on E: Exception do
+    begin
+      raise Exception.Create(E.message);
+    end;
+  end;
+
+  Result := 'sucesso';
+end;
+
+end.

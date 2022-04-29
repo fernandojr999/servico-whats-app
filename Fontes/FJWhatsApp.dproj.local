@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/03/31 14:38:05.000.778,C:\Fernando\ServicoWhatsApp\Fontes\uPH_WAPP_RDW.pas=</Transaction>
+    <Transaction>2021/03/31 14:47:27.000.732,=C:\Fernando\ServicoWhatsApp\Fontes\Unit1.pas</Transaction>
+    <Transaction>2021/03/31 14:47:52.000.994,C:\Fernando\ServicoWhatsApp\Fontes\uFJ_Conexao.dfm=C:\Fernando\ServicoWhatsApp\Fontes\Unit1.dfm</Transaction>
+    <Transaction>2021/03/31 14:47:52.000.994,C:\Fernando\ServicoWhatsApp\Fontes\uFJ_Conexao.pas=C:\Fernando\ServicoWhatsApp\Fontes\Unit1.pas</Transaction>
+    <Transaction>2021/03/31 14:58:46.000.060,=C:\Fernando\ServicoWhatsApp\Fontes\Unit1.pas</Transaction>
+    <Transaction>2021/03/31 14:59:02.000.300,C:\Fernando\ServicoWhatsApp\Fontes\uFJ_ThreadServico.pas=C:\Fernando\ServicoWhatsApp\Fontes\Unit1.pas</Transaction>
+    <Transaction>2021/03/31 15:01:07.000.076,=C:\Fernando\ServicoWhatsApp\Fontes\Unit1.pas</Transaction>
+    <Transaction>2021/03/31 15:01:33.000.377,C:\Fernando\ServicoWhatsApp\Fontes\uFJ_EnvioWhatsApp.pas=C:\Fernando\ServicoWhatsApp\Fontes\Unit1.pas</Transaction>
+    <Transaction>2021/04/01 13:23:40.000.306,C:\Fernando\ServicoWhatsApp\Fontes\PHWhatsApp.dproj=C:\Fernando\ServicoWhatsApp\Fontes\FJWhatsApp.dproj</Transaction>
+    <Transaction>2021/04/01 13:23:47.000.392,C:\Fernando\ServicoWhatsApp\Fontes\uPH_WAPP_Principal.pas=C:\Fernando\ServicoWhatsApp\Fontes\uFJ_WAPP_Principal.pas</Transaction>
+    <Transaction>2021/04/01 13:23:47.000.392,C:\Fernando\ServicoWhatsApp\Fontes\uPH_WAPP_Principal.dfm=C:\Fernando\ServicoWhatsApp\Fontes\uFJ_WAPP_Principal.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

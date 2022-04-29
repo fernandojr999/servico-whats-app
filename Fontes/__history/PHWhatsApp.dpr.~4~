@@ -1,0 +1,29 @@
+program PHWhatsApp;
+
+uses
+  Vcl.Forms,
+  System.IOUtils,
+  System.SysUtils,
+  uTInject.ConfigCEF,
+  uPH_WAPP_Principal in 'uPH_WAPP_Principal.pas' {frmPrincipal},
+  uPH_WAPP_RDW in 'uPH_WAPP_RDW.pas' {RDW: TDataModule};
+
+{$R *.res}
+
+begin
+//  GlobalCEFApp.PathLogFile          := '';
+//  GlobalCEFApp.PathFrameworkDirPath := TPath.Combine(System.SysUtils.GetCurrentDir,'BinWhatsApp');
+//  GlobalCEFApp.PathResourcesDirPath := TPath.Combine(System.SysUtils.GetCurrentDir,'BinWhatsApp');
+//  GlobalCEFApp.PathLocalesDirPath   := TPath.Combine(System.SysUtils.GetCurrentDir,'BinWhatsApp\locales');
+//  GlobalCEFApp.Pathcache            := TPath.Combine(System.SysUtils.GetCurrentDir,'BinWhatsApp\Cache');
+//  GlobalCEFApp.PathUserDataPath     := TPath.Combine(System.SysUtils.GetCurrentDir,'BinWhatsApp\User Data');
+
+  If not GlobalCEFApp.StartMainProcess then
+    exit;
+
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TRDW, RDW);
+  Application.Run;
+end.

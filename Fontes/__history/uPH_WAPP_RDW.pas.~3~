@@ -1,0 +1,45 @@
+unit uPH_WAPP_RDW;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Classes,
+  System.IOUtils,
+  System.StrUtils,
+  System.JSON,
+  System.NetEncoding,
+  System.DateUtils,
+
+  UDWDatamodule,
+  uRESTDWPoolerDB,
+  uRestDWDriverFD,
+  uDWAbout,
+  uSystemEvents,
+  uRESTDWBase,
+  uRESTDWServerEvents,
+  uDWJSONObject,
+  uDWDataset,
+  uDWJSONTools,
+  uDWConsts,
+  uRESTDWServerContext,
+  ServerUtils;
+
+type
+  TDataModule1 = class(TServerMethodDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

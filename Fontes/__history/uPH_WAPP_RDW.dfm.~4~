@@ -1,0 +1,22 @@
+object RDW: TRDW
+  OldCreateOrder = False
+  Encoding = esUtf8
+  Height = 253
+  Width = 358
+  object whatsapp: TDWServerEvents
+    IgnoreInvalidParams = False
+    Events = <
+      item
+        Routes = [crGet]
+        NeedAuthorization = True
+        DWParams = <>
+        JsonMode = jmPureJSON
+        Name = 'enviarMensagemTexto'
+        EventName = 'enviarMensagemTexto'
+        OnlyPreDefinedParams = False
+        OnReplyEvent = whatsappEventsenviarMensagemTextoReplyEvent
+      end>
+    Left = 32
+    Top = 16
+  end
+end
